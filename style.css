@@ -1,0 +1,92 @@
+*{
+   margin: 0;
+   padding: 0;    
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.calculator_display{
+    background-color: #F0F0F0;    
+    height: 8vh;
+    padding: 1.5em;
+}
+
+.calculation{
+    font-weight: 200;
+    padding: .2em;
+}
+
+.typed_number-result{
+    font-weight: 500;
+    font-size: 18px;
+    font-size: 2em;
+}
+
+.buttons_keys{        
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1em 10vw;
+    gap: 0.2em;
+}
+
+button > img{
+    width: 24px;
+    color: green;   
+}
+
+button{    
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;  
+    box-shadow:  1px 1px 2px grey;    
+    background-color: #FFFFFF;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+
+button:hover{
+    border: 1px solid dodgerblue;
+}
+
+button:active{
+    background: rgba(0, 0, 0, 0.2);
+}
+
+footer{
+    margin-top: 8em;
+    text-align: center;
+    border-top: 1px solid rgb(99, 97, 97);
+}
+
+a{
+    font-size: .8em;
+    text-decoration: none;
+    color: rgb(99, 97, 97);
+}
+
+@media screen and (min-width: 1200px){
+    body{
+        font-size: 16px;
+    }   
+    .calculator_display,
+    .buttons_keys{
+        width: 50vw;              
+    }
+
+    .calculator_display{
+        margin: 2em 0 0 2em;
+    }
+
+    .buttons_keys{
+        margin-left: 2em;
+        padding: 1em;        
+    }
+
+    button{
+        padding: .8em;
+    }
+}
